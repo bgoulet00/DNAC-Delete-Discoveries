@@ -1,6 +1,8 @@
 # This script will delete all existing discovery jobs from DNA Center
 # this can be useful if many jobs have built up over time and need to be cleaned up
 
+# BASE_URL variable needs to be updated with the IP address of your DNAC appliance, or in the case of a cluster, the DNAC VIP
+
 # developed using Python 3.6.8 
 
 
@@ -12,7 +14,7 @@ import urllib3
 urllib3.disable_warnings()
 
 # Variables
-BASE_URL = 'https://10.216.3.110'
+BASE_URL = 'https://xxx.xxx.xxx.xxx'
 AUTH_URL = '/dna/system/api/v1/auth/token'
 
 def get_token():
